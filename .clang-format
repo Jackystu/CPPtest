@@ -1,6 +1,6 @@
 BasedOnStyle: Google
 Language: Cpp
-AccessModifierOffset: -3
+AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: AcrossComments
 AlignConsecutiveAssignments: AcrossComments
@@ -78,7 +78,7 @@ IncludeIsMainSourceRegex: ""
 IndentCaseLabels: true
 IndentGotoLabels: true
 IndentPPDirectives: None
-IndentWidth: 3
+IndentWidth: 4
 IndentWrappedFunctionNames: false
 JavaScriptQuotes: Leave
 JavaScriptWrapImports: true
