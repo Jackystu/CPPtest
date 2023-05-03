@@ -1,0 +1,10 @@
+cmake-*
+build
+build-*
+log
+.idea
+log.txt
+.vscode
+.vs
+gh-md-toc.exe
+gh-md-toc
