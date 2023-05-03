@@ -170,7 +170,7 @@ void AsyncLogging::thread_worker()
          if (buffersToWrite.empty()) { continue; }
 
          if (buffersToWrite.size() > 100)
-         {   // FIXME
+         {   //
              // 如果刷入的内存块超过100个，则丢弃到只剩下两个,后续可以加入告警通知异常
             char buf[256];
             snprintf(buf, sizeof buf,

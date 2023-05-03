@@ -112,7 +112,7 @@ void LoggerImpl::DoLog(context const& ctx) { DoConfigLog(&GLOB_CONFIG, ctx); }
 void LoggerImpl::DoConfigLog(Config* config, const context& ctx)
 {
    assert(config != nullptr);
-   // FIXME
+   //
    // 输出到控制台没有进行任何性能优化，输出控制台方便开发时调试，输出到文件可以方便后续问题的跟踪
    if (ctx.level < static_cast<int>(config->log_level)) return;
    if (m_logging) LogFile(config, ctx);

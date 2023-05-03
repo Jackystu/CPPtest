@@ -80,7 +80,7 @@ class scan_arg {
     std::string* string;
     fmt::string_view* string_view;
     custom_scan_arg custom;
-    // TODO: more types
+    // more types
   };
 
   FMT_CONSTEXPR scan_arg() : type(scan_type::none_type), int_value(nullptr) {}
@@ -140,7 +140,7 @@ struct scan_handler : error_handler {
     while (it != end) {
       char c = *it++;
       if (c < '0' || c > '9') on_error("invalid input");
-      // TODO: check overflow
+      // check overflow
       value = value * 10 + static_cast<unsigned>(c - '0');
     }
     scan_ctx_.advance_to(it);

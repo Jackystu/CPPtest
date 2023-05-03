@@ -3793,7 +3793,7 @@ static std::vector<std::string> GetReservedAttributesForElement(
   return std::vector<std::string>();
 }
 
-// TODO(jdesprez): Merge the two getReserved attributes once skip is improved
+// (jdesprez): Merge the two getReserved attributes once skip is improved
 static std::vector<std::string> GetReservedOutputAttributesForElement(
     const std::string& xml_element) {
   if (xml_element == "testsuites") {
@@ -12027,7 +12027,7 @@ void PrintTo(signed char c, ::std::ostream* os) { PrintCharAndCodeTo(c, os); }
 // code otherwise and also as its code.  L'\0' is printed as "L'\\0'".
 void PrintTo(wchar_t wc, ostream* os) { PrintCharAndCodeTo(wc, os); }
 
-// TODO(dcheng): Consider making this delegate to PrintCharAndCodeTo() as well.
+// (dcheng): Consider making this delegate to PrintCharAndCodeTo() as well.
 void PrintTo(char32_t c, ::std::ostream* os) {
   *os << std::hex << "U+" << std::uppercase << std::setfill('0') << std::setw(4)
       << static_cast<uint32_t>(c);
@@ -13937,7 +13937,7 @@ class MockObjectRegistry {
       if (it->second.leakable)  // The user said it's fine to leak this object.
         continue;
 
-      // FIXME: Print the type of the leaked object.
+      // Print the type of the leaked object.
       // This can help the user identify the leaked object.
       std::cout << "\n";
       const MockObjectState& state = it->second;
